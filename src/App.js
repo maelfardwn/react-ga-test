@@ -1,11 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Routes from './routes'
 import Navbar from './pages/Navbar'
 import ReactGa from 'react-ga'
 import { useEffect } from 'react';
-import {Helmet} from 'react-helmet';
-
+import london from './assets/london.jpg'
 function App() {
 
   useEffect(()=>{
@@ -16,9 +15,13 @@ function App() {
   return (
     <div className="App">
 
-    <Navbar />
-   <Routes />
-      
+      <header className="App-header">
+      <div style={{width:'400px',height:'200px'}}>
+      <img width='200px' height='100px' src={london}/>
+       <h2>Hello</h2>
+       <p>Lorem ipsum dorek skanskn ejrhjshd sajhdjhjasdh jhehhe</p>
+      </div>
+      </header>
     </div>
   );
 }
