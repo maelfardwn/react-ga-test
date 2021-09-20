@@ -1,22 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Routes from './routes'
+import Navbar from './pages/Navbar'
+import ReactGa from 'react-ga'
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(()=>{
+    ReactGa.initialize('UA-207998390-1')
+    ReactGa.pageview('/')
+  })
+
   return (
     <div className="App">
+    <Navbar />
+   <Routes />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       <h2>Hello</h2>
       </header>
     </div>
   );
