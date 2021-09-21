@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {Component} from 'react'
 import MetaDecorator from '../components/MetaDecorator'
 import contact from '../assets/contact.png'
 import { Helmet } from 'react-helmet'
 
-export default function Contact(){
+class Contact extends Component {
+  render(){
   return(
     <div>
         <Helmet>
@@ -30,3 +31,6 @@ export default function Contact(){
     </div>
   )
 }
+}
+
+export default Contact
