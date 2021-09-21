@@ -9,19 +9,25 @@ import About from './pages/About'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import Home from './pages/Home';
-const APP = (
-  <BrowserRouter>
-  <Switch>
-      <Route path='/about' component = { About } />
-      <Route path='/projects' component = { Projects } />
-      <Route path='/contact' component = { Contact }/>
-      <Route exact path='/' component={Home} />
-    </Switch>
-    </BrowserRouter>
-)
+
 const rootElemet = document.getElementById("root");
 if(rootElemet.hasChildNodes()){
-hydrate(APP, rootElemet)
+hydrate( <BrowserRouter>
+  <Switch>
+      <Route exact path='/' component={App} />
+      <Route exact path='/about' component = { About } />
+      <Route exact path='/projects' component = { Projects } />
+      <Route exact path='/contact' component = { Contact }/>
+    </Switch>
+    </BrowserRouter>, rootElemet)
 }else{
-  render(APP, rootElemet)
+  render( <BrowserRouter>
+    <Switch>
+        <Route exact path='/' component={App} />
+        <Route exact path='/about' component = { About } />
+        <Route exact path='/projects' component = { Projects } />
+        <Route exact path='/contact' component = { Contact }/>
+      </Switch>
+      </BrowserRouter>, rootElemet)
 }
+reportWebVitals();
