@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 import ReactGa from 'react-ga'
 import { useEffect } from 'react';
 import london from '../assets/london.jpg'
+import MetaDecorator from '../components/MetaDecorator';
 function Home() {
 
   useEffect(()=>{
@@ -14,12 +15,12 @@ function Home() {
 
   return (
     <div className="App">
-
+      <MetaDecorator description="This is Ridwan test homepage opengraph" title="opengraph Test" imageUrl={london} imageAlt="Homepage with london image"/>
       <header className="App-header">
       <div style={{width:'400px',height:'200px'}}>
       <img width='200px' height='100px' src={london}/>
        <h2>Hello</h2>
-       <p>Lorem ipsum dorek skanskn ejrhjshd sajhdjhjasdh jhehhe</p>
+       <p>This is home page . and you will see more information from another page</p>
       </div>
       </header>
     </div>
