@@ -1,6 +1,7 @@
 
 import '../App.css';
 import Routes from '../routes'
+import OpenGraph from 'opengraph-react'
 import Navbar from './Navbar'
 import ReactGa from 'react-ga'
 import { useEffect } from 'react';
@@ -15,6 +16,11 @@ function Home() {
 
   return (
     <div className="App">
+    <OpenGraph  
+  site={'Homepage With library'}  
+  appId='73e81d57-f87b-467b-9c64-a062b5dd21ba'  
+  size={'small'}    
+/>
       <MetaDecorator description="This is Ridwan test homepage opengraph" title="opengraph Test" imageUrl={london} imageAlt="Homepage with london image"/>
       <header className="App-header">
       <div style={{width:'400px',height:'200px'}}>
