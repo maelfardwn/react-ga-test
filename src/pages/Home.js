@@ -22,7 +22,7 @@ class Home extends Component {
   return (
     <div className="App">
     <Helmet>
-
+    <meta name="image" content='https://assesmenttestridwan.herokuapp.com/assets/london.jpg'/>
     <meta name="description" content="Description this Home"/>
     
     <meta property="og:title" content='opengraph test homepage'/>
