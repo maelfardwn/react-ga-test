@@ -4,6 +4,7 @@ import Routes from '../routes'
 import OpenGraph from 'opengraph-react'
 import Navbar from './Navbar'
 import ReactGa from 'react-ga'
+import Helmet from 'react-helmet'
 import React, { Component, useEffect } from 'react';
 import london from '../assets/london.jpg'
 import MetaDecorator from '../components/MetaDecorator';
@@ -20,6 +21,8 @@ class Home extends Component {
   render(){
   return (
     <div className="App">
+    <Helmet>
+
     <meta name="description" content="Description this"/>
     
     <meta property="og:title" content='opengraph test homepage'/>
@@ -31,6 +34,7 @@ class Home extends Component {
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:image:alt" content='London Pict With Twitter image alt'/> 
     <meta property="twitter:description" content="Description this"/>
+    </Helmet>
     <header className="App-header">
       <div style={{width:'400px',height:'200px'}}>
       <img width='200px' height='100px' src={london}/>
