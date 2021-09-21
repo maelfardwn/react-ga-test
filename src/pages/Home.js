@@ -23,7 +23,7 @@ class Home extends Component {
     <div className="App">
     <Helmet>
 
-    <meta name="description" content="Description this"/>
+    <meta name="description" content="Description this Home"/>
     
     <meta property="og:title" content='opengraph test homepage'/>
     <meta property="og:description" content='This is homepage using opengraph for testing'/>
