@@ -20,12 +20,6 @@ class Home extends Component {
   render(){
   return (
     <div className="App">
-    <OpenGraph  
-  site={'Homepage With library'}  
-  appId='73e81d57-f87b-467b-9c64-a062b5dd21ba'  
-  size={'small'}    
-/>
-      <MetaDecorator description="This is Ridwan test homepage opengraph" title="opengraph Test" imageUrl={london} imageAlt="Homepage with london image"/>
       <header className="App-header">
       <div style={{width:'400px',height:'200px'}}>
       <img width='200px' height='100px' src={london}/>
